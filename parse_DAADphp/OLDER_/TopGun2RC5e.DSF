@@ -1,0 +1,1920 @@
+/CTL
+_
+
+#ifdef "pcw"
+   #define notspeccy 1
+#endif
+
+#ifdef "c64"
+   #define notspeccy 1
+#endif
+; Flag Defines
+
+#define dark_                                    0
+#define carry_count_                             1
+#define sam1destroyed_                           2
+#define msnion_goals_                            3
+#define msnion_                                  4
+#define inventory_limit_                         5
+#define is_just_entered_                         7
+#define previous_location_                       8
+#define is_mobile_                               9
+#define give_banan_or_drop_banan_or_throw_banan_ 10
+#define launc_missi_or_fire_missi_or_drop_bomb_  11
+#define give_rock_or_drop_rock_or_throw_rock_    12
+#define launc_missi_or_fire_missi_               13
+#define drop_nuke_or_fire_nuke_                  14
+#define drop_rock_or_throw_rock_                 15
+#define level1_                                  16
+#define maluva_reserved_20_                      20
+#define maluva_reserved_21_                      21
+#define maluva_reserved_22_                      22
+#define dark2_                                   28
+#define turns1_                                  31
+#define turns2_                                  32
+#define verb_                                    33
+#define noun1_                                   34
+#define adjective1_                              35
+#define adverb_                                  36
+#define items_carryable_                         37
+#define player_location_                         38
+#define proposition_                             43
+#define noun2_                                   44
+#define adjective2_                              45
+#define objectprintmode_                         53
+#define is_done_                                 60
+#define has_done_something_                      65
+
+; Room Defines
+
+#define lakeside                                 1
+#define outside_cave                             2
+#define treasure_room                            3
+#define loc_1_1base                              4
+#define loc_1_3cook                              5
+#define loc_3_2tonga                             6
+#define loc_2_5narau                             7
+#define loc_4_1fiji                              8
+#define loc_5_2java                              9
+#define loc5_5boss                               10
+#define loc_5_1                                  11
+#define loc_5_3                                  12
+#define loc_5_4                                  13
+#define loc_4_2                                  14
+#define loc_4_3                                  15
+#define loc_4_4air                               16
+#define loc_4_5                                  17
+#define loc_3_1                                  18
+#define loc_3_3                                  19
+#define loc_3_4                                  20
+#define loc_3_5                                  21
+#define loc_2_1                                  22
+#define loc_2_2                                  23
+#define loc_2_3                                  24
+#define loc_2_4                                  25
+#define loc_1_2                                  26
+#define loc_1_4                                  27
+#define loc_1_5                                  28
+
+; Object Defines
+
+#define apple                                    1
+#define troll                                    2
+#define banana                                   3
+#define bana1                                    4
+#define rock1                                    5
+#define rock                                     6
+#define nuke                                     7
+#define king_kong                                8
+#define old01                                    9
+#define sam1                                     10
+#define sam2                                     11
+#define pln1                                     12
+#define grn1                                     13
+#define pln2                                     14
+#define grn2                                     15
+#define grn3                                     16
+#define pln7                                     17
+#define grn4                                     18
+#define grn5                                     19
+#define pln5                                     20
+#define pln3                                     21
+#define grn6                                     22
+#define grn7                                     23
+#define pln9                                     24
+#define aircarrier                               25
+#define pln4                                     26
+#define pln6                                     27
+#define pln8                                     28
+#define pln10                                    29
+#define pln11                                    30
+#define old02                                    31
+#define grn8                                     32
+#define grn9                                     33
+#define grn10                                    34
+#define pln12                                    35
+#define old03                                    36
+#define tom_cruise                               37
+#define bmb1                                     38
+#define bmb2                                     39
+#define bmb3                                     40
+#define bmb4                                     41
+#define bmb5                                     42
+#define bmb6                                     43
+#define bmb7                                     44
+#define bmb8                                     45
+#define bmb9                                     46
+#define bmb10                                    47
+#define bmb11                                    48
+#define bmb12                                    49
+#define bmb13                                    50
+#define msn1                                     51
+#define msn2                                     52
+#define msn3                                     53
+#define msn4                                     54
+#define msn5                                     55
+#define msn6                                     56
+#define msn7                                     57
+#define msn8                                     58
+#define msn9                                     59
+#define msn10                                    60
+#define msn11                                    61
+#define msn12                                    62
+#define mso01                                    63
+#define mso02                                    64
+#define mso03                                    65
+
+; Process Defines
+
+#define process_anykey                           10
+
+
+/VOC
+S      2    noun
+SOUTH  2    noun
+E      3    noun
+EAST   3    noun
+W      4    noun
+WEST   4    noun
+N      5    noun
+NORTH  5    noun
+NW     6    noun
+SE     7    noun
+SW     8    noun
+NE     9    noun
+D      10   noun
+DOWN   10   noun
+U      11   noun
+UP     11   noun
+ENTER  12   noun
+EXIT   13   noun
+LEAVE  13   noun
+I      14   noun
+INV    14   noun
+INVEN  14   noun
+ALL    50   noun
+EVERY  50   noun
+APPLE  51   noun
+TROLL  52   noun
+BANAN  53   noun
+BANA1  54   noun
+ROCK1  55   noun
+ROCK   56   noun
+ROCKS  56   noun
+NUKE   57   noun
+NUKES  57   noun
+KONG   58   noun
+KONGS  58   noun
+OLD01  59   noun
+SAM1   60   noun
+SAM2   61   noun
+PLN1   62   noun
+GRN1   63   noun
+PLN2   64   noun
+GRN2   65   noun
+GRN3   66   noun
+PLN7   67   noun
+GRN4   68   noun
+GRN5   69   noun
+PLN5   70   noun
+PLN3   71   noun
+GRN6   72   noun
+GRN7   73   noun
+PLN9   74   noun
+AIRCA  75   noun
+PLN4   76   noun
+PLN6   77   noun
+PLN8   78   noun
+PLN10  79   noun
+PLN11  80   noun
+OLD02  81   noun
+GRN8   82   noun
+GRN9   83   noun
+GRN10  84   noun
+PLN12  85   noun
+OLD03  86   noun
+CRUIS  87   noun
+BMB1   88   noun
+BMB2   89   noun
+BMB3   90   noun
+BMB4   91   noun
+BMB5   92   noun
+BMB6   93   noun
+BMB7   94   noun
+BMB8   95   noun
+BMB9   96   noun
+BMB10  97   noun
+BMB11  98   noun
+BMB12  99   noun
+BMB13  100  noun
+MSN1   101  noun
+MSN2   102  noun
+MSN3   103  noun
+MSN4   104  noun
+MSN5   105  noun
+MSN6   106  noun
+MSN7   107  noun
+MSN8   108  noun
+MSN9   109  noun
+MSN10  110  noun
+MSN11  111  noun
+MSN12  112  noun
+MSO01  113  noun
+MSO02  114  noun
+MSO03  115  noun
+MISSI  116  noun
+BOMB   117  noun
+BOMBS  117  noun
+EIGHT  118  noun
+TURN   119  noun
+TURNS  119  noun
+LOOP   120  noun
+LOOPS  120  noun
+LEAF   121  noun
+LEAFS  121  noun
+EJECT  21   verb
+QUIT   21   verb
+RESTA  21   verb
+GET    22   verb
+TAKE   22   verb
+DISCA  23   verb
+DROP   23   verb
+OPEN   24   verb
+CLOSE  25   verb
+WEAR   26   verb
+REMOV  27   verb
+UNWEA  27   verb
+INSER  28   verb
+PUT    28   verb
+L      29   verb
+LOOK   29   verb
+R      29   verb
+GIVE   30   verb
+THROW  31   verb
+LAUNC  32   verb
+FIRE   33   verb
+CUBAN  34   verb
+STALL  35   verb
+OUTSI  36   verb
+FAILI  37   verb
+REVER  38   verb
+LOAD   39   verb
+SAVE   40   verb
+EXAM   41   verb
+EXAMI  41   verb
+X      41   verb
+
+/STX
+
+/0 "\nIt's too dark to see anything.\n"
+/1 "\nYou see "
+/2 ""
+/3 ""
+/4 ""
+/5 ""
+/6 "You don't quite understand that.\n\n"
+/7 "You can't go in that direction.\n\n"
+/8 "You can't do that.\n\n"
+/9 "You are carrying "
+/10 "And you're wearing "
+/11 "Nothing at all.\n"
+/12 "Are you sure?\n\n"
+/13 "\nWould you like another go?\n\n"
+/14 "Goodbye...\n"
+/15 "OK.\n"
+#ifdef "pcw"
+/16 "                                                                                     ..."
+#endif
+#ifdef "c64"
+/16 "                                     ..."
+#endif
+#ifndef "notspeccy"
+/16 "                                       ..."
+#endif
+/17 "\nYou have taken "
+/18 " turn"
+/19 "s"
+/20 "."
+/21 "\nYou have scored "
+/22 "%\n"
+/23 "You're not wearing one of those.\n\n"
+/24 "You can't. You're wearing the _.\n\n"
+/25 "You already have the _.\n\n"
+/26 "There isn't one of those here.\n\n"
+/27 "You can't carry any more things.\n\n"
+/28 "You don't have one of those.\n\n"
+/29 "You're already wearing the _.\n\n"
+/30 "Y"
+/31 "N"
+#ifdef "pcw"
+/32 "                                                                                     ..."
+#endif
+#ifdef "c64"
+/32 "                                     ..."
+#endif
+#ifndef "notspeccy"
+/32 "                                       ..."
+#endif
+/33 ">"
+/34 ">"
+/35 "Time passes...\n"
+/36 "You now have the _.\n\n"
+/37 "You're now wearing the _.\n\n"
+/38 "You've removed the _.\n\n"
+/39 "You've dropped the _.\n\n"
+/40 "You can't wear the _.\n\n"
+/41 "You can't remove the _.\n\n"
+/42 "You can't remove the _. Your hands are full.\n\n"
+/43 "The _ weighs too much for you.\n\n"
+/44 "The _ is in the \n"
+/45 "The _ isn't in the \n"
+/46 ", "
+/47 " and "
+/48 ".\n"
+/49 "You don't have the _.\n\n"
+/50 "You're not wearing the _.\n\n"
+/51 "."
+/52 "There isn't one of those in the"
+/53 "nothing of interest.\n"
+/54 "Type in name of file:\n"
+/55 "File corrupt.\n"
+/56 "I/O Error!  File not Saved!\n"
+/57 "Directory full.\n"
+/58 "Disk full.\n"
+/59 "File name error.\n"
+/60 "Type in name of file.\n"
+/61 "Game Saved\n\n"
+/62 "."
+/63 "You see nothing special.\n\n"
+/64 "Score: "
+
+/MTX
+;Gorilla
+/0  "\n      .\"'\". \n  .-.| -=- |.-.\n I  I,|oYo|,I II\n II I   '   II I\n I I I +-+ I  II\n II  I'-=-'I I I\n I I I.-:-.I  II\n II  I -:- I I I\n I-I I'==='I  -I\nIIII-I     I-IIII\n"
+; Plane Formation
+/1 "\n          --|--\n       *---o0o---*\n    --|-- \n*---o0o---* \n          --|--\n       *---o0o---*\n"
+; Missile Silo
+/2 "   |\n  | |\n  | |\n :| |:\n|:| |:|\n"
+;Air Carrier
+/3 "+-----------------------------D\n|--|-|--|-|--|-|--|-|--|-|--|-|-\n|-|-----------D|--|-----------|--|/\n|o o o o o o o o o o o o o o o o/  \n|------------------------------/\n"
+;"    -----------\n     |--|-|--|-|\n   -|-----------|--\n  |o o o o o o o o/  \n   ---------------\n"
+;pln1
+/4 "        | | \n    x---o8o---x  \n"
+;pln4
+/5 "\n          --|--\n       *---o0o---*\n    --|-- \n*---o0o---* \n          --|--\n       *---o0o---*\n"
+; plane 12
+/6 "      --|--\n*---o--(.)--o---*\n"
+;
+/7 "\nHe seems angry or hungry. He guards the mountains. \nHe likes throwing trees to airplanes!"
+/OTX
+
+/0 ""
+/1 "an apple"
+/2 "an enormous troll"
+/3 "a banana"
+/4 "a banana"
+/5 "a big rock"
+/6 "a big rock"
+/7 "a nuclear warhead (nuke)"
+/8 "King Kong. \nHe seems angry or hungry. He guards the mountains. \nHe likes throwing trees to airplanes! \n      .\"'\". \n  .-.| -=- |.-.\n I  I,|oYo|,I II\n II I   '   II I\n I I I +-+ I  II\n II  I'-=-'I I I\n I I I.-:-.I  II\n II  I -:- I I I\n I-I I'==='I  -I\nIIII-I     I-IIII\n"
+/9 "a formation containing 2 MKs 24 Spitfires , 1 Soviet Yakovlev Yak-3 , 2 P-47D Thunderbolts and a P-38J Lightning  "
+/10 "a SAM1 missile silo"
+/11 "a SAM2 missile silo"
+/12 "a Saab JAS 39E Gripen"
+/13 "a MR-SAM missile silo"
+/14 "a Sukhoi Su-35S"
+/15 "a Iron Dome missile silo"
+/16 "a MEADS missile silo"
+/17 "a Shenyang FC-31"
+/18 "a Aster 30 SAMP/T"
+/19 "a HQ-9 missile silo"
+/20 "a F-15EX Eagle II"
+/21 "a Eurofighter Typhoon"
+/22 "a MIM-104 Patriot"
+/23 "a THAAD (Terminal High Altitude Area Defense) missile silo"
+/24 "a J-20"
+/25 "A Huge Aircraft Carrier... It seems at least 3 times bigger that 'USS Gerald R Ford'! With a quick look you can estimate that this has Length of 1011m has a Displacement of 304,800 tons.You estimate that this would cost about $38.4 billion give or take a few pennies! "
+/26 "a Dassault Rafale"
+/27 "a Sukhoi Su-35S"
+/28 "a F-22 Raptor "
+/29 "a Sukhoi Su-57"
+/30 "a F-35 Lightning II"
+/31 "a formation containing 2 MKs 24 Spitfires , 1 Soviet Yakovlev Yak-3 , 2 P-47D Thunderbolts and a P-38J Lightning  "
+/32 "a S-300VM (Antey-2500)"
+/33 "a S-400 Triumph"
+/34 "a S-500 Prometheus Range"
+/35 "a F-35 Lightning II"
+/36 "a formation containing 2 MKs 24 Spitfires , 1 Soviet Yakovlev Yak-3 , 2 P-47D Thunderbolts and a P-38J Lightning  "
+/37 "Tom Cruise who was the master mind behind this and also is the bad guy and end boss!"
+/38 "a bomb"
+/39 "a bomb"
+/40 "a bomb"
+/41 "a bomb"
+/42 "a bomb"
+/43 "a bomb"
+/44 "a bomb"
+/45 "a bomb"
+/46 "a bomb"
+/47 "a bomb"
+/48 "a bomb"
+/49 "a bomb"
+/50 "a bomb"
+/51 "a missile"
+/52 "a missile"
+/53 "a missile"
+/54 "a missile"
+/55 "a missile"
+/56 "a missile"
+/57 "a missile"
+/58 "a missile"
+/59 "a missile"
+/60 "a missile"
+/61 "a missile"
+/62 "a missile"
+/63 "a missile"
+/64 "a missile"
+/65 "a missile"
+
+/LTX
+
+/0 ""
+/1 "You are by the side of a beautiful lake."
+/2 "You are outside a cave. The entrance lies north."
+/3 "You are in a room of treasures."
+/4 "You fly over your Base Island.\n\nExits: E"
+/5 "You fly over Cook Island.   \n\nExits: E, W"
+/6 "You fly over Tonga Island.\n\nExits: E, W"
+/7 "You fly over Narau Island.\n\nExits: N, W"
+/8 "You fly over Fiji Islands.\n\nExits: S, E"
+/9 "You fly over Java Islands.\n\nExits: E, W"
+/10 "Mountain Boss Base.\n\nExits: W"
+/11 "Sea\n\nExits: N, E"
+/12 "Mountain\n\nExits: E, W"
+/13 "Mountain\n\nExits: N, E, W"
+/14 "Sea\n\nExits: E, W"
+/15 "Sea\n\nExits: N, E, W"
+/16 "You are at a stategic spot in near the coast! \n\nExits: S, E, W"
+/17 "Mountain\n\nExits: N, W"
+/18 "Sea\n\nExits: N, E"
+/19 "Sea\n\nExits: S, E, W"
+/20 "Sea\n\nExits: E, W"
+/21 "Sea\n\nExits: S, W"
+/22 "Sea\n\nExits: S, E"
+/23 "Sea\n\nExits: E, W"
+/24 "Sea\n\nExits: E, W"
+/25 "Sea\n\nExits: E, W"
+/26 "Sea\n\nExits: E, W"
+/27 "Sea\n\nExits: E, W"
+/28 "Sea\n\nExits: S, W"
+
+/CON
+
+/0
+/1
+/2
+/3
+/4 E loc_1_2
+/5 W loc_1_2 E loc_1_4
+/6 W loc_3_1 E loc_3_3
+/7 N loc_1_5 W loc_2_4
+/8 E loc_4_2 S loc_5_1
+/9 W loc_5_1 E loc_5_3
+/10 W loc_5_4
+/11 N loc_4_1fiji E loc_5_2java
+/12 W loc_5_2java E loc_5_4
+/13 N loc_4_4air W loc_5_3 E loc5_5boss
+/14 E loc_4_3 W loc_4_1fiji
+/15 N loc_3_3 E loc_4_4air W loc_4_2
+/16 E loc_4_5 W loc_4_3 S loc_5_4
+/17 N loc_3_5 W loc_4_4air
+/18 N loc_2_1 E loc_3_2tonga
+/19 W loc_3_2tonga E loc_3_4 S loc_4_3
+/20 W loc_3_3 E loc_3_5
+/21 W loc_3_4 S loc_4_5
+/22 E loc_2_2 S loc_3_1
+/23 E loc_2_3 W loc_2_1
+/24 E loc_2_4 W loc_2_2
+/25 E loc_2_5narau W loc_2_3
+/26 W loc_1_1base E loc_1_3cook
+/27 W loc_1_3cook E loc_1_5
+/28 W loc_1_4 S loc_2_5narau
+
+/OBJ
+
+/0     252  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/1     1    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    APPLE _
+/2     2    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/3     252  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BANAN _
+/4     23   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BANA1 _
+/5     23   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    ROCK1 _
+/6     252  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    ROCK  _
+/7     252  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    NUKE  _
+/8     13   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/9     26   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/10    5    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/11    5    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/12    5    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/13    6    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/14    6    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/15    7    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/16    7    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/17    7    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/18    8    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/19    8    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/20    8    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/21    8    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/22    9    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/23    9    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/24    9    1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/25    16   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/26    16   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/27    16   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/28    16   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/29    16   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/30    16   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/31    16   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/32    10   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/33    10   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/34    10   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/35    10   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/36    10   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/37    10   1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    _     _
+/38    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB1  _
+/39    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB2  _
+/40    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB3  _
+/41    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB4  _
+/42    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB5  _
+/43    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB6  _
+/44    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB7  _
+/45    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB8  _
+/46    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB9  _
+/47    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB10 _
+/48    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB11 _
+/49    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB12 _
+/50    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    BMB13 _
+/51    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN1  _
+/52    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN2  _
+/53    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN3  _
+/54    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN4  _
+/55    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN5  _
+/56    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN6  _
+/57    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN7  _
+/58    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN8  _
+/59    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN9  _
+/60    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN10 _
+/61    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN11 _
+/62    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSN12 _
+/63    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSO01 _
+/64    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSO02 _
+/65    254  1   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _    MSO03 _
+
+/PRO 0
+
+> _       _      AT      0
+                WINDOW 0
+                CLS
+                PROCESS 6
+
+> _       _     WINDOW  0
+; Set the boundries for the main text window
+
+> _       _     WINDOW 1
+#ifdef "pcw"
+                BORDER  0
+#endif
+#ifdef "c64"
+                BORDER  0
+#endif
+#ifndef "notspeccy"
+                BORDER  0
+#endif
+                WINAT   0       0
+#ifdef "pcw"
+                INK 4
+                PAPER 0
+#endif
+#ifdef "c64"
+                INK 4
+                PAPER 0
+#endif
+#ifndef "notspeccy"
+                INK 4
+                PAPER 0
+#endif
+#ifdef "pcw"
+                WINSIZE 33      127
+#endif
+#ifdef "c64"
+                WINSIZE 25      127
+#endif
+#ifndef "notspeccy"
+                WINSIZE 25      127
+#endif
+                CLS
+
+> _       _     PICTURE @player_location_ ; [Player]
+                DISPLAY 0 ; 0 = Display the previously buffered graphic, nonzero = do not display
+
+
+; Display location text
+
+> _       _       DESC    @player_location_ ; [Player]
+                NEWLINE
+
+; Call the on_describe {} logic here ...
+
+> _       _     PROCESS 3
+
+; Call the main parser event loop here ...
+
+> _       _     PROCESS 1
+
+/PRO 1
+
+> _       _     PROCESS 4
+
+> _       _     PARSE   0
+                PROCESS 2
+                REDO
+
+> _       _     EQ      turns1_   255
+                PLUS    turns2_ 1
+                CLEAR   turns1_
+                SKIP    1
+
+> _       _     PLUS    turns1_   1
+
+> _       _     NEWLINE ; Adds a newline before the response
+
+> _       _     PROCESS 5
+                ISDONE
+                REDO
+
+> _       _     MOVE    player_location_
+                CLS
+                RESTART
+
+> _       _     NEWTEXT
+                LT      verb_    14
+                SYSMESS 7
+                REDO
+
+> _       _     SYSMESS 8
+                REDO
+
+/PRO 2
+
+> _       _     NEWLINE ; Adds a newline before the response
+> _       _     HASAT 87; TIMEOUT
+                SYSMESS 35
+                DONE
+
+> _       _     SYSMESS 6
+
+/PRO 3
+
+> _      _    ZERO 6
+              LET msnion_ 1
+              LET inventory_limit_ 100
+              LET 6 255
+              LET items_carryable_ 100
+
+> _      _    CLEAR is_done_
+
+> _      _    AT 0
+              SET is_mobile_
+              CLS
+              PROCESS 7
+              SET is_just_entered_
+              COPYFF player_location_ previous_location_
+              LET objectprintmode_ 64
+              GOTO loc_1_1base
+              CLS
+              RESTART
+
+> _      _    PROCESS 8
+
+> _      _    AT loc_1_1base
+              ISAT pln12 252
+              MESSAGE "CONGRATULATIONS YOU KILLED EVERYONE. YOU WIN! YOU CAN RETURN HOME AND WAIT FOR TOP-GUN 3\n"
+              MESSAGE "The president reveals you a BIG secret! He says :\n"
+              MESSAGE "You can find the Update for -10D bathroom Design- in the Top Gun 2 48k tape!!!!\n"
+              GOTO 0
+              END
+              DONE
+
+> _      _    PRESENT old01
+              MESSAGE 1
+
+> _      _    PRESENT old02
+              MESSAGE 1
+
+> _      _    PRESENT old03
+              MESSAGE 1
+
+> _      _    PRESENT king_kong
+              MESSAGE 7 MES 0
+
+> _      _    PRESENT aircarrier
+              MESSAGE 3
+
+> _      _    CLEAR level1_
+
+> _      _    PRESENT sam1
+              SET level1_
+              MESSAGE 2
+
+> _      _    ZERO level1_
+              PRESENT grn3
+              SET level1_
+              MESSAGE 2
+
+> _      _    ZERO level1_
+              PRESENT grn1
+              SET level1_
+              MESSAGE 2
+
+> _      _    CLEAR level1_
+
+> _      _    PRESENT sam2
+              SET level1_
+              MESSAGE 2
+
+> _      _    ZERO level1_
+              PRESENT grn7
+              SET level1_
+              MESSAGE 2
+
+> _      _    ZERO level1_
+              PRESENT grn2
+              SET level1_
+              MESSAGE 2
+
+> _      _    CLEAR level1_
+
+> _      _    PRESENT grn4
+              SET level1_
+              MESSAGE 2
+
+> _      _    ZERO level1_
+              PRESENT grn8
+              SET level1_
+              MESSAGE 2
+
+> _      _    PRESENT grn5
+              MESSAGE 2
+
+> _      _    PRESENT grn6
+              MESSAGE 2
+
+> _      _    PRESENT grn10
+              MESSAGE 2
+
+> _      _    PRESENT grn9
+              MESSAGE 2
+
+> _      _    PRESENT pln1
+              MESSAGE 4
+
+> _      _    PRESENT pln2
+              MESSAGE 4
+
+> _      _    PRESENT pln7
+              MESSAGE 4
+
+> _      _    PRESENT pln5
+              MESSAGE 4
+
+> _      _    PRESENT pln3
+              MESSAGE 4
+
+> _      _    PRESENT pln9
+              MESSAGE 4
+
+> _      _    PRESENT pln4
+              PRESENT pln6
+              PRESENT pln8
+              MESSAGE 5
+
+> _      _    PRESENT pln10
+              MESSAGE 4
+
+> _      _    PRESENT pln11
+              MESSAGE 4
+
+> _      _    PRESENT pln12
+              MESSAGE 6
+
+> _      _    PRESENT tom_cruise
+              MESSAGE " XXXXX \n"
+              MESSAGE " -O-O- \n"
+              MESSAGE "   | \n"
+              MESSAGE "  --- \n"
+
+
+/PRO 4
+
+> _      _    CLEAR is_done_
+
+> _      _    CLEAR is_just_entered_
+
+> _      _    NOTSAME player_location_ previous_location_
+              SET is_just_entered_
+
+> _      _    COPYFF player_location_ previous_location_
+
+
+/PRO 5
+
+> I      _    SYSMESS 9
+              LISTAT 254
+              NEWLINE
+              DONE
+> E      _    AT loc_5_4
+              ISNOTAT king_kong 252
+              MESSAGE "King Kong is  guarding the mountains!\n"
+              DONE
+
+> S      _    AT loc_1_5
+              ISNOTAT pln1 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> E      _    AT loc_2_4
+              ISNOTAT pln1 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> E      _    AT loc_3_1
+              ISNOTAT pln7 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> W      _    AT loc_3_3
+              ISNOTAT pln7 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> W      _    AT loc_4_2
+              ISNOTAT pln2 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> N      _    AT loc_5_1
+              ISNOTAT pln2 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> E      _    AT loc_5_1
+              ISNOTAT pln5 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> W      _    AT loc_5_3
+              ISNOTAT pln5 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> E      _    AT loc_4_3
+              ISNOTAT pln9 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> W      _    AT loc_4_5
+              ISNOTAT pln9 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> N      _    AT loc_5_4
+              ISNOTAT pln9 252
+              MESSAGE "You must destroy the other defences first!\n"
+              DONE
+
+> E      _    AT loc_5_4
+              ISNOTAT aircarrier 252
+              MESSAGE "You must clear the Aircraft Carrier Defences.To enter the main base.\n"
+              DONE
+
+> W      _    AT loc_1_2
+              ISNOTAT tom_cruise 252
+              MESSAGE "You're ashamed to return to your home base before you kill EVERYONE and EVERYTHING in the final base!\n"
+              DONE
+
+> _      _    CLEAR has_done_something_
+
+> _      _    CLEAR give_banan_or_drop_banan_or_throw_banan_
+              CLEAR launc_missi_or_fire_missi_or_drop_bomb_
+              CLEAR give_rock_or_drop_rock_or_throw_rock_
+              CLEAR launc_missi_or_fire_missi_
+              CLEAR drop_nuke_or_fire_nuke_
+              CLEAR drop_rock_or_throw_rock_
+
+> GIVE   BANAN SET give_banan_or_drop_banan_or_throw_banan_
+
+> DROP   BANAN SET give_banan_or_drop_banan_or_throw_banan_
+
+> THROW  BANAN SET give_banan_or_drop_banan_or_throw_banan_
+
+> LAUNC  MISSI SET launc_missi_or_fire_missi_or_drop_bomb_
+              SET launc_missi_or_fire_missi_
+
+> FIRE   MISSI SET launc_missi_or_fire_missi_or_drop_bomb_
+              SET launc_missi_or_fire_missi_
+
+> DROP   BOMB SET launc_missi_or_fire_missi_or_drop_bomb_
+
+> GIVE   ROCK SET give_rock_or_drop_rock_or_throw_rock_
+
+> DROP   ROCK SET give_rock_or_drop_rock_or_throw_rock_
+              SET drop_rock_or_throw_rock_
+
+> THROW  ROCK SET give_rock_or_drop_rock_or_throw_rock_
+              SET drop_rock_or_throw_rock_
+
+> DROP   NUKE SET drop_nuke_or_fire_nuke_
+
+> FIRE   NUKE SET drop_nuke_or_fire_nuke_
+
+> GIVE   APPLE PRESENT troll
+              CARRIED apple
+              SET has_done_something_
+              MESSAGE "The troll eats the apple then wanders off.\n"
+              DESTROY apple
+              DESTROY troll
+
+> GET    BANAN PRESENT bana1
+              SET has_done_something_
+              MESSAGE "You open the window and get the banana.\n"
+              DESTROY bana1
+              PLACE banana 254
+
+> GET    ROCK PRESENT rock1
+              SET has_done_something_
+              MESSAGE "You open the window and get the rock.\n"
+              DESTROY rock1
+              PLACE rock 254
+
+> _      _    NOTZERO give_banan_or_drop_banan_or_throw_banan_
+              PRESENT king_kong
+              CARRIED banana
+              SET has_done_something_
+              MESSAGE "King Kong eats the banana waves goodbye and then wanders off.\n"
+              DESTROY banana
+              DESTROY king_kong
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_or_drop_bomb_
+              PRESENT king_kong
+              SET has_done_something_
+              MESSAGE "You aim with your onboard super AI computer and fire. \nOne KK fart is enough to confuse the complex electronic sensors of your plane!!!\n"
+              MESSAGE "You see on screen a message:\n R-Tape Loading Error!!!\n"
+
+> _      _    NOTZERO give_rock_or_drop_rock_or_throw_rock_
+              PRESENT king_kong
+              CARRIED rock
+              NOTCARR nuke
+              SET has_done_something_
+              MESSAGE "King Kong likes to play 'throw'.He throws the rock back at you. He seems to enjoy it. Now it is his turn: He throws something to you. It is a...Nuclear Warhead!!! You decide to keep the nuke!\n"
+              PLACE nuke 254
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_1_2
+              PRESENT old01
+              CARRIED mso01
+              SET has_done_something_
+              MESSAGE "With one missile you destroy : a formation containing 2 MKs 24 Spitfires , 1 Soviet Yakovlev Yak-3 , 2 P-47D Thunderbolts and a P-38J Lightning  \n"
+              DESTROY mso01
+              DESTROY old01
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_1_3cook
+              ABSENT sam2
+              CARRIED msn1
+              SET has_done_something_
+              MESSAGE "Your missile destroys a Saab JAS 39E Gripen\n"
+              DESTROY msn1
+              DESTROY pln1
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_1_3cook
+              ISNOTAT sam1 255
+              PRESENT sam2
+              CARRIED bmb2
+              SET has_done_something_
+              MESSAGE "Your bomb destroys SAM Silo #2\n"
+              DESTROY bmb12
+              DESTROY sam2
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_1_3cook
+              PRESENT sam1
+              CARRIED bmb1
+              SET has_done_something_
+              MESSAGE "Your bomb destroys SAM Silo #1\n"
+              DESTROY bmb11
+              DESTROY sam1
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_2_5narau
+              ABSENT grn3
+              CARRIED msn7
+              SET has_done_something_
+              MESSAGE "Your missile destroys a Shenyang FC-31\n"
+              DESTROY msn7
+              DESTROY pln7
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_2_5narau
+              ISNOTAT grn2 255
+              PRESENT grn3
+              CARRIED bmb3
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a MEADS missile silo\n"
+              DESTROY bmb3
+              DESTROY grn3
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_2_5narau
+              PRESENT grn2
+              CARRIED bmb2
+              SET has_done_something_
+              MESSAGE "Your bomb destroys an Iron Dome missile silo\n"
+              DESTROY bmb2
+              DESTROY grn2
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_3_2tonga
+              ABSENT grn1
+              CARRIED msn2
+              SET has_done_something_
+              MESSAGE "Your missile destroys a Sukhoi Su-35S\n"
+              DESTROY msn2
+              DESTROY pln2
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_3_2tonga
+              PRESENT grn1
+              CARRIED bmb1
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a MR-SAM missile silo\n"
+              DESTROY grn1
+              DESTROY bmb1
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_1fiji
+              ABSENT pln3
+              CARRIED msn5
+              SET has_done_something_
+              MESSAGE "Your missile destroys a F-15EX Eagle II\n"
+              DESTROY msn5
+              DESTROY pln5
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_1fiji
+              ABSENT grn4
+              CARRIED msn3
+              SET has_done_something_
+              MESSAGE "Your missile destroys a Eurofighter Typhoon\n"
+              DESTROY msn3
+              DESTROY pln3
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_4_1fiji
+              ISNOTAT grn4 255
+              PRESENT grn5
+              CARRIED bmb5
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a HQ-9 missile silo\n"
+              DESTROY bmb5
+              DESTROY grn5
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_4_1fiji
+              PRESENT grn4
+              CARRIED bmb4
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a Aster 30 SAMP/T\n"
+              DESTROY bmb4
+              DESTROY grn4
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_5_2java
+              ABSENT grn6
+              CARRIED msn9
+              SET has_done_something_
+              MESSAGE "Your missile destroys a J-20\n"
+              DESTROY msn9
+              DESTROY pln9
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_5_2java
+              ISNOTAT grn6 255
+              PRESENT grn7
+              CARRIED bmb7
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a THAAD (Terminal High Altitude Area Defense) missile silo\n"
+              DESTROY bmb7
+              DESTROY grn7
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_5_2java
+              PRESENT grn6
+              CARRIED bmb6
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a MIM-104 Patriot\n"
+              DESTROY bmb6
+              DESTROY grn6
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO drop_nuke_or_fire_nuke_
+              AT loc_4_4air
+              CARRIED nuke
+              SET has_done_something_
+              MESSAGE "You always wanted to see that a nuke can do. You drop the nuke and everything is destroyed!!!! You wish you had another nuke!\n"
+              DESTROY nuke
+              DESTROY pln8
+              DESTROY pln10
+              DESTROY pln11
+              DESTROY pln6
+              DESTROY pln4
+              DESTROY old02
+              DESTROY aircarrier
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc_4_4air
+              ABSENT pln11
+              CARRIED bmb13
+              SET has_done_something_
+              MESSAGE "Your missile destroys the Air Carrier\n"
+              DESTROY aircarrier
+              DESTROY bmb13
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_4air
+              ABSENT pln10
+              CARRIED msn11
+              SET has_done_something_
+              MESSAGE "Your missile destroys a F-35 Lightning II\n"
+              DESTROY msn11
+              DESTROY pln11
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_4air
+              ABSENT pln8
+              CARRIED msn10
+              SET has_done_something_
+              MESSAGE "Your missile destroys a Sukhoi Su-57\n"
+              DESTROY msn10
+              DESTROY pln10
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_4air
+              ABSENT pln6
+              CARRIED msn8
+              SET has_done_something_
+              MESSAGE "Your missile destroys a F-22 Raptor\n"
+              DESTROY msn8
+              DESTROY pln8
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_4air
+              ISNOTAT pln4 255
+              PRESENT pln6
+              CARRIED msn6
+              SET has_done_something_
+              MESSAGE "Your missile destroys a Sukhoi Su-35S\n"
+              DESTROY msn6
+              DESTROY pln6
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_4air
+              PRESENT pln4
+              CARRIED msn4
+              SET has_done_something_
+              MESSAGE "Your missile destroys a Dassault Rafale\n"
+              DESTROY msn4
+              DESTROY pln4
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc_4_4air
+              PRESENT old02
+              CARRIED mso02
+              SET has_done_something_
+              MESSAGE "You have become so good that with one missile you also destroy : a formation containing 2 MKs 24 Spitfires , 1 Soviet Yakovlev Yak-3 , 2 P-47D Thunderbolts and a P-38J Lightning  \n"
+              DESTROY mso02
+              DESTROY old02
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO drop_rock_or_throw_rock_
+              PRESENT tom_cruise
+              AT loc5_5boss
+              ABSENT pln12
+              CARRIED rock
+              SET has_done_something_
+              MESSAGE "You drop the rock right in the head of Tom Cruise. There will not be another Top-Gun in the next 36 years!\n"
+              DESTROY rock
+              DESTROY tom_cruise
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc5_5boss
+              ABSENT grn10
+              CARRIED msn12
+              SET has_done_something_
+              MESSAGE "Your missile destroys a F-35 Lightning II\n"
+              DESTROY msn12
+              DESTROY pln12
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc5_5boss
+              ISNOTAT grn9 255
+              PRESENT grn10
+              CARRIED bmb10
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a S-500 Prometheus Range\n"
+              DESTROY bmb10
+              DESTROY grn10
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc5_5boss
+              ISNOTAT grn8 255
+              PRESENT grn9
+              CARRIED bmb9
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a S-400 Triumph\n"
+              DESTROY bmb9
+              DESTROY grn9
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> DROP   BOMB AT loc5_5boss
+              PRESENT grn8
+              CARRIED bmb8
+              SET has_done_something_
+              MESSAGE "Your bomb destroys a S-300VM (Antey-2500)\n"
+              DESTROY bmb8
+              DESTROY grn8
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO launc_missi_or_fire_missi_
+              AT loc5_5boss
+              PRESENT old03
+              CARRIED mso03
+              SET has_done_something_
+              MESSAGE "With one missile you destroy : a formation containing 2 MKs 24 Spitfires , 1 Soviet Yakovlev Yak-3 , 2 P-47D Thunderbolts and a P-38J Lightning  \n"
+              DESTROY mso03
+              DESTROY old03
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> _      _    NOTZERO drop_nuke_or_fire_nuke_
+              AT loc5_5boss
+              CARRIED nuke
+              SET has_done_something_
+              MESSAGE "You decide it's more fun to nuke them all! You drop the nuke and you see all the enemy base destroyed. The evil Tom Cruise is gone! There won't be another Top Gun sequel for the next 36 years!\n"
+              DESTROY nuke
+              DESTROY tom_cruise
+              DESTROY old03
+              DESTROY grn8
+              DESTROY grn9
+              DESTROY pln12
+              DESTROY grn10
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              PLUS msnion_goals_ 1
+              SYSMESS 64
+              PRINT msnion_goals_
+              MESSAGE " \n"
+
+> CUBAN  EIGHT SET has_done_something_
+              MESSAGE "You perform an amazing Cuban Eight Maneuver : This maneuver consists of a 5of8ths loop to the 45-degree line, then a half roll, a three-quarter loop again to the 45-degree line, then a half roll, and a quick 1of8 loop to the flight level.  \n"
+
+> STALL  TURN SET has_done_something_
+              MESSAGE "You perform an amazing Stall Turn : The torque/gyroscopic effect of this maneuver is what makes it so thrilling to watch.  To start, the pilot completes a quarter loop to vertical. As airspeed decreases, the pilot applies the rudder so the aircraft rotates around the yaw axis. This causes the nose to point to the ground, and there's a pause made, drawing the vertical flight line down and making a quarter loop to level flight. Despite being called a "Stall Turn," the aircraft doesn't really stall. What happens here is that gyroscopic forces caused by the propeller during the rate of yaw produce a rolling movement. Keeping the aircraft under control during this maneuver is challenging, and requires expert skill. \n"
+
+> OUTSI  LOOP SET has_done_something_
+              MESSAGE "You perform an outside loop : This was the figure that test pilot and aviation pioneer Jim Doolittle proved as technically possible back in the early 1920's, despite many aeronautical engineers claiming it was impossible. The pilot enters a vertical circle from straight, level flight, its canopy pointing out of the loop, and drops. What makes this so challenging is that it creates powerful negative G forces.\n"
+
+> FAILI  LEAF SET has_done_something_
+              MESSAGE "You perform a Failing Leaf : There are many different roll variations to choose from, but our pick is the rolling leaf. With the throttle off, the wings level stall, and the plane begins to slip into one direction. The pilot then counters the slip with the rudder before a true spin occurs, so it slips back the other direction, like a leaf. Countering with the rudder again slides it back, and the pilot can then continue this slip and slide motion or simply dive to exit into the next maneuver.\n"
+
+> REVER  TURN SET has_done_something_
+              MESSAGE "You perform a reverse turn\n"
+
+> X      APPLE ZERO has_done_something_
+              PRESENT apple
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      TROLL ZERO has_done_something_
+              PRESENT troll
+              MESSAGE "Hungry.\n"
+              DONE
+
+> X      BANAN ZERO has_done_something_
+              PRESENT banana
+              MESSAGE "Maybe you will need it.\n"
+              DONE
+
+> X      BANA1 ZERO has_done_something_
+              PRESENT bana1
+              MESSAGE "Maybe you will need it.\n"
+              DONE
+
+> X      ROCK1 ZERO has_done_something_
+              PRESENT rock1
+              MESSAGE "Maybe you will need it.\n"
+              DONE
+
+> X      ROCK ZERO has_done_something_
+              PRESENT rock
+              MESSAGE "Maybe you will need it.\n"
+              DONE
+
+> X      OLD01 ZERO has_done_something_
+              PRESENT old01
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      SAM1 ZERO has_done_something_
+              PRESENT sam1
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      SAM2 ZERO has_done_something_
+              PRESENT sam2
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN1 ZERO has_done_something_
+              PRESENT pln1
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN1 ZERO has_done_something_
+              PRESENT grn1
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN2 ZERO has_done_something_
+              PRESENT pln2
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN2 ZERO has_done_something_
+              PRESENT grn2
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN3 ZERO has_done_something_
+              PRESENT grn3
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN7 ZERO has_done_something_
+              PRESENT pln7
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN4 ZERO has_done_something_
+              PRESENT grn4
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN5 ZERO has_done_something_
+              PRESENT grn5
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN5 ZERO has_done_something_
+              PRESENT pln5
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN3 ZERO has_done_something_
+              PRESENT pln3
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN6 ZERO has_done_something_
+              PRESENT grn6
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN7 ZERO has_done_something_
+              PRESENT grn7
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN9 ZERO has_done_something_
+              PRESENT pln9
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      AIRCA ZERO has_done_something_
+              PRESENT aircarrier
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN4 ZERO has_done_something_
+              PRESENT pln4
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN6 ZERO has_done_something_
+              PRESENT pln6
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN8 ZERO has_done_something_
+              PRESENT pln8
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN10 ZERO has_done_something_
+              PRESENT pln10
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN11 ZERO has_done_something_
+              PRESENT pln11
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      OLD02 ZERO has_done_something_
+              PRESENT old02
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN8 ZERO has_done_something_
+              PRESENT grn8
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN9 ZERO has_done_something_
+              PRESENT grn9
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      GRN10 ZERO has_done_something_
+              PRESENT grn10
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      PLN12 ZERO has_done_something_
+              PRESENT pln12
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      OLD03 ZERO has_done_something_
+              PRESENT old03
+              MESSAGE "Ready to fire.\n"
+              DONE
+
+> X      BMB1 ZERO has_done_something_
+              PRESENT bmb1
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB2 ZERO has_done_something_
+              PRESENT bmb2
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB3 ZERO has_done_something_
+              PRESENT bmb3
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB4 ZERO has_done_something_
+              PRESENT bmb4
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB5 ZERO has_done_something_
+              PRESENT bmb5
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB6 ZERO has_done_something_
+              PRESENT bmb6
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB7 ZERO has_done_something_
+              PRESENT bmb7
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB8 ZERO has_done_something_
+              PRESENT bmb8
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB9 ZERO has_done_something_
+              PRESENT bmb9
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB10 ZERO has_done_something_
+              PRESENT bmb10
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB11 ZERO has_done_something_
+              PRESENT bmb11
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB12 ZERO has_done_something_
+              PRESENT bmb12
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      BMB13 ZERO has_done_something_
+              PRESENT bmb13
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN1 ZERO has_done_something_
+              PRESENT msn1
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN2 ZERO has_done_something_
+              PRESENT msn2
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN3 ZERO has_done_something_
+              PRESENT msn3
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN4 ZERO has_done_something_
+              PRESENT msn4
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN5 ZERO has_done_something_
+              PRESENT msn5
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN6 ZERO has_done_something_
+              PRESENT msn6
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN7 ZERO has_done_something_
+              PRESENT msn7
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN8 ZERO has_done_something_
+              PRESENT msn8
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN9 ZERO has_done_something_
+              PRESENT msn9
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN10 ZERO has_done_something_
+              PRESENT msn10
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN11 ZERO has_done_something_
+              PRESENT msn11
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSN12 ZERO has_done_something_
+              PRESENT msn12
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSO01 ZERO has_done_something_
+              PRESENT mso01
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSO02 ZERO has_done_something_
+              PRESENT mso02
+              MESSAGE "Delicious.\n"
+              DONE
+
+> X      MSO03 ZERO has_done_something_
+              PRESENT mso03
+              MESSAGE "Delicious.\n"
+              DONE
+
+> _      _    LT verb_ 13
+              NOTDONE
+
+> _      _    ZERO has_done_something_
+              PROCESS 9
+
+> _      _    ZERO has_done_something_
+              NOTDONE
+
+
+/PRO 6
+
+; Set the boundries for the main text window
+
+> _       _     WINDOW 1
+#ifdef "pcw"
+                BORDER  0
+#endif
+#ifdef "c64"
+                BORDER  0
+#endif
+#ifndef "notspeccy"
+                BORDER  0
+#endif
+                WINAT   0       0
+#ifdef "pcw"
+                INK 4
+                PAPER 0
+#endif
+#ifdef "c64"
+                INK 4
+                PAPER 0
+#endif
+#ifndef "notspeccy"
+                INK 4
+                PAPER 0
+#endif
+#ifdef "pcw"
+                WINSIZE 33      127
+#endif
+#ifdef "c64"
+                WINSIZE 25      127
+#endif
+#ifndef "notspeccy"
+                WINSIZE 25      127
+#endif
+                CLS
+
+                CLEAR   255
+
+> _       _     NOTEQ   255     29 ; 29 = GFlags
+                CLEAR   @255
+
+> _       _     PLUS    255     1
+                LT      255     255
+                SKIP    -2
+
+> _       _     RESET
+                LET 17 255 ; Mark the graphics view as dirty
+                LET     52 10 ; Strength
+                LET     items_carryable_  10 ; Max Carry
+                SET     46 ; CPNoun
+                SET     47 ; CPAdject
+                GOTO    0
+
+/PRO 7
+
+> _      _    PAUSE 50
+              MESSAGE " +-++-++-+ +-++-++-+ +-+\n"
+              MESSAGE " |T  O  P| |G  U  N   2|\n"
+              MESSAGE " +-++-++-+ +-++-++-+ +-+\n"
+              MESSAGE "   MaveRick Dangerous !\n"
+              PROCESS process_anykey
+              CLS
+              MESSAGE "You are a flight instructor.\n"
+;              MESSAGE "AAAAAAAAAAA"
+;              MESSAGE "mes 0 \n" MES 0
+;              MESSAGE "mes 1 \n" MES 1
+;              MESSAGE "mes 2 \n" MES 2
+;              MESSAGE "mes 3 \n" MES 3
+;              MESSAGE "mes 4 \n" MES 4
+;              MESSAGE "mes 5 \n" MES 5
+;              MESSAGE "mes 6 \n" MES 6
+;              MESSAGE "mes 7 \n" MES 7
+;              MESSAGE "AAAAAAAAAAA"
+              MESSAGE "An unknown evil mastermind plans to fill the USA market with fake iPads. President and the admirals summoned you to help. You also must prove to the noob pilots that you are the best! Your Goal : Destroy All the Enemies!\n"
+              PROCESS process_anykey
+              MESSAGE "Mission briefing:\n"
+              MESSAGE "You will operate a highly automated drone manually. You can control it with the basic known commands! \n"
+              PROCESS process_anykey
+              MESSAGE "Mission briefing:\n"
+              MESSAGE "We suspect enemy has many aircrafts that are protected by Ground to Air defence systems! Before you destroy a target you must destroy it's protectors!\n"
+              MESSAGE "Good luck! Most of us here are counting on you! The other ones are in war room, designing 'Plan B'.\n"
+              PROCESS process_anykey
+
+
+/PRO 8
+
+> _      _    ZERO dark_
+              ABSENT 0
+              LISTOBJ
+
+> _      _    PRESENT 0
+              LISTOBJ
+
+> _      _    NEWLINE
+
+
+/PRO 9
+
+> I      _    SET has_done_something_
+              NEWLINE
+              OK
+              NEWLINE
+
+> LOOK   _    SET has_done_something_
+              CLS
+              RESTART
+
+> X      _    SET has_done_something_
+              SYSMESS 63
+              DONE
+
+> GET    ALL  DOALL 255
+
+> GET    _    SET has_done_something_
+              AUTOG
+              DONE
+
+> DROP   _    SET has_done_something_
+              AUTOD
+              DONE
+
+> DROP   ALL  DOALL 254
+
+> QUIT   _    SET has_done_something_
+              QUIT 
+              GOTO 0
+              END
+              DONE
+
+> SAVE   _    SET has_done_something_
+              SAVE 0
+              RESTART
+
+> LOAD   _    SET has_done_something_
+              LOAD 0
+              RESTART
+
+> LOOK   _    SET has_done_something_
+              PLUS 29 128
+              CLS
+              RESTART
+
+
+/PRO 10
+
+> _       _   SAVEAT
+              ANYKEY
+              BACKAT
+              SAVEAT
+#ifdef "pcw"
+              MESSAGE "                                                                                        "
+#endif
+#ifdef "c64"
+              MESSAGE "                                        "
+#endif
+#ifndef "notspeccy"
+              MESSAGE "                                          "
+#endif
+              BACKAT
+/END
